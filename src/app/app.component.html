@@ -1,6 +1,8 @@
+<course-header [titleHeader] = "titleApp" [d] = "drawer"></course-header>
+<!--setSidenavControl - то что заэмиттили из sidebar.component.ts-->
+<course-sidebar (setSidenavControl)="setSidenav($event)"></course-sidebar>
 
-
-<h1>{{t}}</h1>
+<h1>{{titleApp}}</h1>
 
 <div>My {{getSalary(1.2)}}</div>
 
